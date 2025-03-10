@@ -20,24 +20,21 @@ Satellite images often contain noise, making object extraction challenging. This
 ```
 📺 Satellite-Image-Segmentation
 │-- 📁 Dataset/                     # EuroSAT dataset (RGB)
-│-- 📁 Filtered_Images/             # Images after noise reduction
-│-- 📁 Segmented_Images/            # K-Means, Mean Shift, Graph-Based segmentation outputs
-│-- 📁 Refined_Objects/             # Results after Region Growing & CCA
-│-- 📝 segmentation.py              # Code for segmentation methods
-│-- 📝 refinement.py                # Code for region growing & CCA
-│-- 📝 evaluation.py                # Code for evaluating IoU, Dice, and Pixel Accuracy
-│-- 📝 visualize_results.py         # Code for visualizing segmentation steps
 │-- 📝 requirements.txt             # Required dependencies
 │-- 📝 README.md                    # Project documentation
+|--📜 segmentation_notebook.ipynb   # Jupyter Notebook with complete 
+                                  implementation 
 ```
 
 ---
 
 ## 🛠️ Installation & Requirements
+pip install -r requirements.txt
 
 ### 1️⃣ **Clone the Repository**
 ```bash
-git clone https://github.com/your_username/Satellite-Image-Segmentation.git
+git clone https://github.com/chethanakantipudi
+/Satellite-Image-Segmentation.git
 cd Satellite-Image-Segmentation
 ```
 
@@ -79,3 +76,14 @@ We visualize segmentation results at **four stages**:
 2. **After Noise Reduction** (Gaussian Blur)
 3. **After K-Means Segmentation**
 4. **Final Refined Segmentation** (Region Growing + CCA)
+
+## Example visualization:
+
+![image](https://github.com/user-attachments/assets/4c2f73f6-48de-4d8a-af59-a206437bbae0)
+
+## 📜 License
+This project is licensed under the MIT License.
+
+
+
+
